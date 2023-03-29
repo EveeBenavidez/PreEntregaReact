@@ -1,12 +1,22 @@
 header {
+    background-color: #2C3333;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
+    color: #EEEEEE;
     display: inline-block;
-    margin: 1rem;
+    margin: 1.5rem;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin-left: 1rem;
+    color: #EEEEEE;
 }

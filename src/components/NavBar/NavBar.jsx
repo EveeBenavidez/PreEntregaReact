@@ -9,8 +9,8 @@ const NavBar = () => {
 
       <nav>
         <ul>
-          <li> Hombre </li>
-          <li> Mujer </li>
+          <li> Man </li>
+          <li> Woman </li>
           <li> Sale </li>
           <li> Zulu Selection </li>
         </ul>
