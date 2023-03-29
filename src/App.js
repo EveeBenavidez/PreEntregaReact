@@ -7,7 +7,8 @@ function App() {
     <>
     <NavBar/>
     <ItemListContainer greeting="Welcome"/>
-    <ProductCard />
+    <ProductCard /> 
+    
     </>
     
   );

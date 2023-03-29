@@ -1,5 +1,5 @@
 header {
-    background-color: #2C3333;
+    background-color: #454546;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,4 +19,9 @@ li {
 h1 {
     margin-left: 1rem;
     color: #EEEEEE;
+}
+
+li:hover {
+    color:#ffff56;
+
 }

@@ -6,11 +6,11 @@
     padding: 0.8rem;
     margin: 1rem;
     cursor: pointer;
-    background: linear-gradient(to left, #393E46,rgba(172, 0, 0, 0.432));
-    transition: all 0.3s;
+    background: linear-gradient(to left, #474b51,#a0a0a0);
+    transition: all 0.5s;
 }   
 
 .product-button:hover {
-    color: #44a09d;
+    color: #ffff56;
 
 }
