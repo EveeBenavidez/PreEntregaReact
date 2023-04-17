@@ -1,0 +1,34 @@
+.cardProducto {
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgProducto{
+    width: 20rem;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.btnProducto {
+    border: none;
+    border-radius: 10px;
+    color: #fafafa;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    background: linear-gradient(to left, #474b51,#a0a0a0);
+    transition: all 0.5s;
+}
+
+
+.btnProducto:hover {
+    color: #ffff56;
+
+}
