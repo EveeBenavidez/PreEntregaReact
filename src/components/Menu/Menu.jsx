@@ -5,7 +5,7 @@ import '../NavBar/NavBar.css'
 
 const Menu = () => {
   return (
-    <header>
+    <header className='headerMenu'>
         <Link to={"/"}>
             <h1> Zulu Shoes </h1>
         </Link>
@@ -13,16 +13,16 @@ const Menu = () => {
       <nav>
         <ul>
             <li> 
-                <NavLink to={"/"}> Home </NavLink>
+                <NavLink to={"/"} className={"aMenu"}> Home </NavLink>
             </li>
             <li>
-                <NavLink to={"/categoria/1"}> Man </NavLink>  
+                <NavLink to={"/categoria/1"} className={"aMenu"}> Man </NavLink>  
             </li>
             <li> 
-                <NavLink to={"/categoria/3"}> Woman </NavLink>
+                <NavLink to={"/categoria/3"} className={"aMenu"}> Woman </NavLink>
             </li>
             <li>
-                <NavLink to={"/categoria/2"}> Selection </NavLink>
+                <NavLink to={"/categoria/2"} className={"aMenu"}> Selection </NavLink>
             </li>
         </ul>
       </nav>

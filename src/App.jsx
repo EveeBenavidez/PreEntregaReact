@@ -1,11 +1,8 @@
-import NavBar from "./components/NavBar/NavBar";
-import ProductCard from "./components/Card/ProductCard/ProductCard";
+
 import ItemCounter from "./components/ItemCounter/ItemCounter";
 import Mensaje from "./components/Mensaje/Mensaje";
-import Categorias from "./components/Categorias/Categorias";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import JsonPlaceHolder from "./components/Fetch/JsonPlaceHolder";
 import Menu from "./components/Menu/Menu";
 
 // Importamos componentes de router :

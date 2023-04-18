@@ -6,14 +6,23 @@ import ItemCounter from '../ItemCounter/ItemCounter'
 
 const Item = ({id, nombre, precio, img}) => {
   return (
+    <body className='bodyItem'>
+    <div className='wrapper'>
     <div className='cardProducto'>
+      <h3> "{nombre}" </h3>
       <img className='imgProducto' src={img} alt={nombre} />
-      <h3> Nombre: {nombre} </h3>
-      <p> Precio: {precio} </p>
+      <p> $ {precio} </p>
       <p> ID: {id} </p>
+      <br />
+      <div className='btn fill'>
       <Link to={`/item/${id}`}> Ver Detalles </Link>
-      <ItemCounter/>
+      </div>
+      <div className='button-wrapper'>
+       <ItemCounter/>
+      </div>
     </div>
+    </div>
+    </body>
   )
 }
 

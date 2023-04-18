@@ -30,12 +30,12 @@ const agregarAlCarrito = () => {
   return (
     <>
     <div className='Counter'>
-      <button onClick={ decrementar }> - </button>
-      <p>    {contador} </p>
-      <button onClick={ incrementar }> + </button>
+      <button className='btn outline' onClick={ decrementar }> - </button>
+      <p className='pCounter'>    {contador} </p>
+      <button className='btn outline' onClick={ incrementar }> + </button>
       <br />
       
-      <button onClick={agregarAlCarrito}> Agregar al carrito </button>
+      <button className='btn outline' onClick={agregarAlCarrito}> Agregar al carrito </button>
     </div>
     </>
   )
