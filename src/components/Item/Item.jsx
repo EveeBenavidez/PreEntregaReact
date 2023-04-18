@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Item.css'
+import ItemCounter from '../ItemCounter/ItemCounter'
 
 
 const Item = ({id, nombre, precio, img}) => {
@@ -11,6 +12,7 @@ const Item = ({id, nombre, precio, img}) => {
       <p> Precio: {precio} </p>
       <p> ID: {id} </p>
       <Link to={`/item/${id}`}> Ver Detalles </Link>
+      <ItemCounter/>
     </div>
   )
 }

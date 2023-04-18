@@ -24,6 +24,7 @@ function App() {
        
        <BrowserRouter>
         <Menu/>
+        <Mensaje />
          <Routes> 
            <Route path='/' element={ <ItemListContainer/> }/>
            <Route path='/categoria/:idCategoria' element={ <ItemListContainer/> }/>
@@ -36,8 +37,7 @@ function App() {
        </BrowserRouter>
        {/* <NavBar/>  */}
        {/* <ProductCard />  */}
-       {/* <ItemCounter/> */}
-       {/* <Mensaje /> */}
+       <Mensaje />
        {/* <Categorias /> */}
        {/* <JsonPlaceHolder /> */}
     
