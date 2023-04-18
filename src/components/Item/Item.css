@@ -88,8 +88,14 @@ a:hover {
   }
   
 .fill:hover{
-    transform: scale(1.125);  
+    transform: scale(1.135);  
     border-color: rgba(255, 255, 255, 0.9);
     filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
     transition: all .3s ease;    
   }
+
+.imgProducto:hover{
+    transform: scale(1.125);  
+    transition: all .6s ease;  
+    cursor: pointer;
+}
