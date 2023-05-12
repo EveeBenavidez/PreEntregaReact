@@ -27,8 +27,10 @@ export const CarritoProvider = ({children}) => {
    // funcion eliminadora de productos del carrito
   
     const eliminarProducto = (id) =>{
-        const carritoActualizado = carrito.filter ( prod => prod.id !== id)
-        setCarrito (carritoActualizado);
+        console.log("Eliminando: ",id)
+        const carritoActualizado = carrito.filter(prod => prod.item.id !== id);
+        setCarrito(carritoActualizado);
+        console.log(carritoActualizado)
     }
 
 

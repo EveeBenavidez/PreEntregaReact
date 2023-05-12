@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import { useState, usecon } from 'react'
+import { useState, useContext } from 'react'
 //import { Link } from 'react-router-dom'
 import { CarritoContext } from '../../context/CarritoContext'
 import { db } from '../../service/firebase/config'
