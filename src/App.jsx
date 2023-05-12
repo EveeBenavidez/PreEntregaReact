@@ -5,7 +5,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Menu from "./components/Menu/Menu";
 import { CarritoProvider } from "./context/CarritoContext";
 import Cart from "./components/Cart/Cart";
-import Formulario from './components/Formulario/Formulario'
+import Checkout from "./components/Checkout/Checkout";
 
 // Importamos componentes de router :
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -32,9 +32,10 @@ function App() {
            <Route path='/Woman' element={ <Woman/> }/>
            <Route path='/Selection' element={ <Selection/> }/>
            <Route path="/cart" element= { <Cart/> }/>
+           <Route path="/checkout" element= { <Checkout/> }/>
            <Route path="*" element= { <h2> En construccion </h2> }/>
         </Routes>
-        <Formulario />
+        
         </CarritoProvider>
        </BrowserRouter>
        </>
