@@ -1,0 +1,13 @@
+.divCheck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+label{
+    font-size: 1.1rem;
+    margin: 1rem;
+    font-family: 'Righteous', sans-serif;
+}
+

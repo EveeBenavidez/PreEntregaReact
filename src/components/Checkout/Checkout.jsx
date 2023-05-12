@@ -3,6 +3,7 @@ import { useState, useContext } from 'react'
 import { CarritoContext } from '../../context/CarritoContext'
 import { db } from '../../service/firebase/config'
 import { collection, addDoc } from 'firebase/firestore'
+import './Checkout.css'
 
 const Checkout = () => {
     const { carrito, vaciarCarrito } = useContext(CarritoContext);
@@ -61,7 +62,7 @@ const Checkout = () => {
 
 
     return (
-        <div>
+        <div className='divCheck'>
             <h2>Checkout</h2>
             <form onSubmit={handleSubmit}>
                 {carrito.map((producto) => (
@@ -100,7 +101,7 @@ const Checkout = () => {
                     <input type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
                 </div>
                 {error && <p style={{ color: "red" }}> {error} </p>}
-                <button type='submit'>Finalizar Compra</button>
+                <button type='submit' className='btn outline'>Finalizar Compra</button>
             </form>
             {
                 ordenId && (
