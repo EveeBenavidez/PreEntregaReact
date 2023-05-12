@@ -23,7 +23,7 @@ const ItemCounter = ({inicial, stock, funcionAgregar}) => {
     <>
     <div className='Counter'>
       <button className='btn outline' onClick={ decrementar }> - </button>
-      <p className='pCounter'> {contador} </p>
+      <p className='pCounter' id='pCounter'> {contador} </p>
       <button className='btn outline' onClick={ incrementar }> + </button>
       <br />
       

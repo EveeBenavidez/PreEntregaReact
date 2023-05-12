@@ -40,3 +40,13 @@ li:hover {
 .aMenu{
     font-size: 2rem;
 }
+
+.imgZulu{
+    width: 8rem;
+    margin-left: 0rem;
+}
+
+.zuluLogobtn{
+    display: flex;
+    margin: 0.3rem;
+}

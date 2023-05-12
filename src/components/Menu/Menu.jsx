@@ -4,12 +4,16 @@ import CardWidget from '../CartWidget/CardWidget'
 import '../NavBar/NavBar.css'
 
 const Menu = () => {
+  const imgZulu = "https://png2.cleanpng.com/sh/cf580868ff5ee2e039b3f262f2cf5dbe/L0KzQYm3VMAyN5p3iZH0aYP2gLBuTf1ieqQyet5qY3vwf7A0kBhwbV5mgeQ2anB1dLL1TgNvbZJwfeR8LXHnebXok71kaaN5h9H3LYPrf7b6TcVia2JmTqs5MEnlQIS9TsM0PWIATKIDMUW1Qoe7UMUzQGE4Uak3cH7q/kisspng-mars-blackmon-shoe-air-jordan-sneakers-adidas-cartoon-shoes-5ac1a69009b036.3351940815226405280397.png"
+
   return (
     <header className='headerMenu'>
-        <Link to={"/"}>
-            <h1> Zulu Shoes </h1>
-        </Link>
       
+        <Link className='zuluLogobtn'  to={"/"}>
+            <h1> Zulu Shoes </h1>
+            <img className="imgZulu" src={imgZulu} alt="Logo Zulu" />
+        </Link>
+
       <nav>
         <ul>
             <li> 
