@@ -37,7 +37,7 @@ const ItemListContainer = () => {
 
   return (
     <div>
-      <h2 style={{textAlign: "center"}}> Productos </h2>
+      <h3 style={{textAlign: "center"}}> Productos </h3>
       <ItemList products={products}/>
     </div>
   )
