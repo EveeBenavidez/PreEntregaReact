@@ -5,6 +5,7 @@ import { db } from '../../service/firebase/config'
 import { collection, addDoc } from 'firebase/firestore'
 import './Checkout.css'
 
+
 const Checkout = () => {
     const { carrito, vaciarCarrito } = useContext(CarritoContext);
     const [nombre, setNombre] = useState("");
@@ -17,6 +18,8 @@ const Checkout = () => {
 
 
     //funcion manejadora de formulario
+
+    const total = carrito.reduce((total, producto) => total + (producto.item.precio * producto.cantidad), 0);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -64,6 +67,7 @@ const Checkout = () => {
     return (
         <div className='divCheck'>
             <h2>Checkout</h2>
+           
             <form onSubmit={handleSubmit}>
                 {carrito.map((producto) => (
                     <div key={producto.item.id}>
@@ -71,11 +75,15 @@ const Checkout = () => {
                             {producto.item.nombre} x {producto.cantidad}
                         </p>
                         <p>Precio $: {producto.item.precio} </p>
+                        
+                        
                         <hr />
                     </div>
                 ))
                 }
+                <p>Total $: {total} </p>
                 <hr />
+                
                 <div>
                     <label htmlFor="">Nombre</label>
                     <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
@@ -103,6 +111,7 @@ const Checkout = () => {
                 {error && <p style={{ color: "red" }}> {error} </p>}
                 <button type='submit' className='btn outline'>Finalizar Compra</button>
             </form>
+            
             {
                 ordenId && (
                     <strong>¡Gracias por tu compra! Tu número de orden es {ordenId} </strong>
