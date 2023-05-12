@@ -1,0 +1,14 @@
+
+.divContenedorCart{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.divContenedorDos{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin: 2rem;
+}

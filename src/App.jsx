@@ -1,9 +1,11 @@
 
-import ItemCounter from "./components/ItemCounter/ItemCounter";
 import Mensaje from "./components/Mensaje/Mensaje";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Menu from "./components/Menu/Menu";
+import { CarritoProvider } from "./context/CarritoContext";
+import Cart from "./components/Cart/Cart";
+import Formulario from './components/Formulario/Formulario'
 
 // Importamos componentes de router :
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,10 +18,10 @@ import Selection from "./components/Selection/Selection";
 
 function App() {
   return (
-    <>
-      
-       
+  <body>
+      <>
        <BrowserRouter>
+        <CarritoProvider>
         <Menu/>
         <Mensaje />
          <Routes> 
@@ -29,17 +31,14 @@ function App() {
            <Route path='/Man' element={ <Man/> }/>
            <Route path='/Woman' element={ <Woman/> }/>
            <Route path='/Selection' element={ <Selection/> }/>
+           <Route path="/cart" element= { <Cart/> }/>
+           <Route path="*" element= { <h2> En construccion </h2> }/>
         </Routes>
-
+        <Formulario />
+        </CarritoProvider>
        </BrowserRouter>
-       {/* <NavBar/>  */}
-       {/* <ProductCard />  */}
-       <Mensaje />
-       {/* <Categorias /> */}
-       {/* <JsonPlaceHolder /> */}
-    
-    </>
-    
+       </>
+  </body>
   );
 }
 
