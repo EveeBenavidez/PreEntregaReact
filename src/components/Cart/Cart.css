@@ -10,5 +10,11 @@
     display: flex;
     align-items: center;
     flex-direction: column; 
-    margin: 2rem;
+    margin: 2.1rem;
+    padding: 1rem;
 }
+
+#btnCart{
+    font-size: 1.3rem;
+}
+

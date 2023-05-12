@@ -12,7 +12,8 @@ const CartItem = ({item, cantidad}) => {
           <img className='imgCard' src={item.img} alt="" />
           <p>Cantidad: {cantidad} </p>
           <p>Precio: $ {item.precio} </p>
-          <button className='btn fill' onClick={()=> eliminarProducto(item.id)}> Eliminar </button>
+          <button className='btn fill' id='btnCart' onClick={()=> eliminarProducto(item.id)}> Eliminar </button>
+
       </div>
     )
   }
