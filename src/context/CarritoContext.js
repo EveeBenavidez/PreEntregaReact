@@ -18,9 +18,15 @@ export const CarritoProvider = ({children}) => {
 
     const agregarProducto = (item, cantidad) => {
        if (!verificadorCarrito(item.id)) {
-        setCarrito(prev => [...prev, {item, cantidad}])
+        setCarrito(prev => [...prev, {item, cantidad}] )
        } else{
-        console.log("Prod ya agregado")
+        setCarrito(prev => prev.map((prod) => {
+            if (prod.item.id === item.id){
+                return {...prod, cantidad: prod.cantidad + cantidad };
+            } else {
+                return prod;
+            }
+        }))
        }
     }
    
@@ -44,7 +50,7 @@ export const CarritoProvider = ({children}) => {
    // funcion de verificacion de un producto en el carrito 
 
    const verificadorCarrito = (id) => {
-    return carrito.some(prod => prod.id === id);
+    return carrito.some(prod => prod.item.id === id);
    }
 
    //usamos carritocontext.provider para enviar valor al carrito
